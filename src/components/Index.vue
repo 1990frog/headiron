@@ -1,23 +1,22 @@
 <template>
     <div class="main">
-        <div style="margin-top: 10px;">
-            <div style="margin:0 auto;width:550px;border: 1px solid green">
-                <el-input v-model="google.keyword" placeholder="请输入内容" style="width: 400px;"></el-input>
-                <el-button type="primary" icon="el-icon-search" @click="googleQuery" style="width: 100px">google
-                </el-button>
+        <div class="search">
+            <div>
+                <el-input v-model="google.keyword" placeholder="请输入内容" class="input"></el-input>
+                <el-button type="primary" icon="el-icon-search" @click="googleQuery" class="button">google</el-button>
             </div>
         </div>
-        <div style="margin-top: 10px;">
-            <div style="margin:0 auto;width:550px">
-                <el-input v-model="baidu.keyword" placeholder="请输入内容" style="width: 400px;"></el-input>
-                <el-button type="primary" icon="el-icon-search" @click="baiduQuery" style="width: 100px">百度</el-button>
+        <div class="search">
+            <div>
+                <el-input v-model="baidu.keyword" placeholder="请输入内容" class="input"></el-input>
+                <el-button type="primary" icon="el-icon-search" @click="baiduQuery" class="button">百度</el-button>
             </div>
         </div>
         <div>
             <template v-for="(value,key,index) in bookmarks">
                 {{ index + 1 }} {{ key }}：
                 <template v-for="item in value">
-                    {{ item.name }}
+                    <el-link type="primary" href="item.url">{{ item.name }}</el-link>
                 </template>
             </template>
         </div>
@@ -112,8 +111,20 @@ export default {
 
 <style scoped>
 .main {
+    margin: 0 auto;
     border: 1px solid red;
     width: 1000px;
     height: 1000px;
+}
+
+.search {
+    margin: 0 auto 15px;
+    width: 550px;
+}
+.input{
+    width: 400px;
+}
+.button{
+    width: 100px;
 }
 </style>
