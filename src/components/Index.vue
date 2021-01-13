@@ -13,10 +13,10 @@
             </div>
         </div>
         <div>
-            <template v-for="(value,key,index) in bookmarks">
-                {{ index + 1 }} {{ key }}：
-                <template v-for="item in value">
-                    <el-link type="primary" href="item.url">{{ item.name }}</el-link>
+            <template v-for="(item,index) in bookmarks">
+                <label :key="index">{{ index + 1 }} {{ item.key }}：</label>
+                <template v-for="(sub_item,sub_index) in item">
+                    <el-link :key="sub_index" href="sub_item.url" target="_blank">{{ sub_item.name }}</el-link>&nbsp;&nbsp;
                 </template>
             </template>
         </div>
@@ -121,10 +121,16 @@ export default {
     margin: 0 auto 15px;
     width: 550px;
 }
-.input{
+
+.search .input {
     width: 400px;
 }
-.button{
+
+.search .button {
     width: 100px;
+}
+
+.list {
+
 }
 </style>
