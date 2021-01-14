@@ -12,12 +12,17 @@
                 <el-button type="primary" icon="el-icon-search" @click="baiduQuery" class="button">百度</el-button>
             </div>
         </div>
-        <div>
-            <template v-for="(item,index) in bookmarks">
-                <label :key="index">{{ index + 1 }} {{ item.key }}：</label>
-                <template v-for="(sub_item,sub_index) in item">
-                    <el-link :key="sub_index" href="sub_item.url" target="_blank">{{ sub_item.name }}</el-link>&nbsp;&nbsp;
-                </template>
+        <div class="bookmarks">
+            <template v-for="(value,key,index) in bookmarks">
+                <div :key="index" class="box">
+                    <span :key="index" class="line">{{ index + 1 }} {{ key }}：</span>
+                    <template v-for="(sub_item,sub_index) in value">
+                        <span :key="sub_index" class="line">
+                            <el-link :key="sub_index" :href="sub_item.url" underline="false" target="_blank"
+                                     style="color:burlywood;font-size: 20px;">{{ sub_item.name }}</el-link>
+                        </span>
+                    </template>
+                </div>
             </template>
         </div>
     </div>
@@ -111,10 +116,8 @@ export default {
 
 <style scoped>
 .main {
-    margin: 0 auto;
-    border: 1px solid red;
+    margin: 10% auto;
     width: 1000px;
-    height: 1000px;
 }
 
 .search {
@@ -130,7 +133,23 @@ export default {
     width: 100px;
 }
 
-.list {
+.bookmarks {
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+    clear: both;
+}
 
+.bookmarks .box {
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+    text-align: left;
+}
+
+.bookmarks .box .line {
+    font-size: 20px;
+    margin-left: 10px;
+    color: plum;
 }
 </style>
