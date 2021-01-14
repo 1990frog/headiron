@@ -2,24 +2,24 @@
     <div class="main">
         <div class="search">
             <div>
-                <el-input v-model="google.keyword" placeholder="请输入内容" class="input"></el-input>
+                <el-input v-model="google.keyword" placeholder="请输入内容" class="input" @keyup.enter.native="googleQuery"></el-input>
                 <el-button type="primary" icon="el-icon-search" @click="googleQuery" class="button">google</el-button>
             </div>
         </div>
         <div class="search">
             <div>
-                <el-input v-model="baidu.keyword" placeholder="请输入内容" class="input"></el-input>
+                <el-input v-model="baidu.keyword" placeholder="请输入内容" class="input" @keyup.enter.native="baiduQuery"></el-input>
                 <el-button type="primary" icon="el-icon-search" @click="baiduQuery" class="button">百度</el-button>
             </div>
         </div>
         <div class="bookmarks">
             <template v-for="(value,key,index) in bookmarks">
-                <div :key="index" class="box">
-                    <span :key="index" class="line">{{ index + 1 }} {{ key }}：</span>
+                <div class="box">
+                    <span class="line">{{ index + 1 }} {{ key }}：</span>
                     <template v-for="(sub_item,sub_index) in value">
-                        <span :key="sub_index" class="line">
+                        <span class="line">
                             <el-link :key="sub_index" :href="sub_item.url" underline="false" target="_blank"
-                                     style="color:burlywood;font-size: 20px;">{{ sub_item.name }}</el-link>
+                                     style="color: whitesmoke;font-size: 20px;">{{ sub_item.name }}</el-link>
                         </span>
                     </template>
                 </div>
@@ -77,10 +77,11 @@ export default {
                     {"name": "Just My Socks", "url": "https://justmysocks1.net"},
                     {"name": "openwrt", "url": "http://www.openwrt.org.cn/bbs/forum.php"},
                 ],
-                "movie": [
+                "movie&music": [
                     {"name": "YouTube", "url": "https://www.youtube.com/"},
                     {"name": "BiliBili", "url": "https://www.bilibili.com/"},
-                    {"name": "网易云音乐", "url": "https://music.163.com/"}
+                    {"name": "网易云音乐", "url": "https://music.163.com/"},
+                    {"name": "QQ音乐", "url": "https://y.qq.com/"}
                 ],
                 "shopping": [
                     {"name": "淘宝", "url": "https://www.taobao.com/"},
@@ -131,6 +132,7 @@ export default {
 
 .search .button {
     width: 100px;
+    margin-left: 10px;
 }
 
 .bookmarks {
