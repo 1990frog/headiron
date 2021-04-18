@@ -45,9 +45,13 @@ export default {
                 "search": [
                     {"name": "Google", "url": "https://www.google.com/"},
                     {"name": "Wiki", "url": "https://zh.wikipedia.org/"},
-                    {"name": "Gmail", "url": "https://mail.google.com/mail/"},
+                    {"name": "Gmail", "url": "https://mail.google.com/mail/"}
+                ],
+                "code":[
                     {"name": "Github", "url": "https://github.com/"},
-                    {"name": "Gitee", "url": "https://gitee.com/"}
+                    {"name": "Gitee", "url": "https://gitee.com/"},
+                    {"name": "StackOverflow", "url": "https://stackoverflow.com/"},
+                    {"name": "Json.cn", "url": "https://www.json.cn/"}
                 ],
                 "translate": [
                     {"name": "Google翻译", "url": "https://translate.google.com/"},
@@ -57,10 +61,10 @@ export default {
                     {"name": "高德地图", "url": "https://ditu.amap.com/"},
                     {"name": "A, Chizi!", "url": "http://achizi.com/"},
                     {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
-                    {"name": "Json.cn", "url": "https://www.json.cn/"},
-                    {"name": "StackOverflow", "url": "https://stackoverflow.com/"},
                     {"name": "wallhaven", "url": "https://wallhaven.cc/"},
-                    {"name": "压图", "url": "https://tinypng.com/"}
+                    {"name": "压图", "url": "https://tinypng.com/"},
+                    {"name": "ProcessOn", "url": "https://www.processon.com/"},
+                    {"name": "奈飞小铺", "url": "https://www.naifei.shop//"}
                 ],
                 "forum": [
                     {"name": "起点", "url": "https://www.qidian.com/"},
@@ -76,10 +80,12 @@ export default {
                     {"name": "家电论坛", "url": "https://www.jdbbs.com/forum.php"},
                     {"name": "Just My Socks", "url": "https://justmysocks1.net"},
                     {"name": "openwrt", "url": "http://www.openwrt.org.cn/bbs/forum.php"},
+                    {"name": "恩山无线论坛", "url": "https://www.right.com.cn/forum/"}
                 ],
                 "movie&music": [
                     {"name": "YouTube", "url": "https://www.youtube.com/"},
                     {"name": "BiliBili", "url": "https://www.bilibili.com/"},
+                    {"name": "Netflix", "url": "https://www.netflix.com/"},
                     {"name": "网易云音乐", "url": "https://music.163.com/"},
                     {"name": "QQ音乐", "url": "https://y.qq.com/"}
                 ],
@@ -97,9 +103,9 @@ export default {
                     {"name": "Manning | Home", "url": "https://www.manning.com/"},
                     {"name": "并发编程网", "url": "http://ifeve.com/"},
                     {"name": "VisuAlgo", "url": "https://visualgo.net/en"},
-                    {"name": "ProcessOn", "url": "https://www.processon.com/"},
                     {"name": "C语言中文网", "url": "http://c.biancheng.net/cpp/"},
-                    {"name": "SegmentFault", "url": "https://segmentfault.com/"}
+                    {"name": "SegmentFault", "url": "https://segmentfault.com/"},
+                    {"name": "美团技术团队", "url": "https://tech.meituan.com/"}
                 ]
             }
         }
