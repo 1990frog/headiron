@@ -16,12 +16,12 @@
     </div>
     <div class="bookmarks">
       <template v-for="(value,key,index) in bookmarks">
-        <div class="box">
+        <div class="box" :key="index">
           <span class="line">{{ index + 1 }} {{ key }}：</span>
           <template v-for="(sub_item,sub_index) in value">
-            <span class="line">
-                <el-link :key="sub_index" :href="sub_item.url" underline="false" target="_blank"
-                         style="color: whitesmoke;font-size: 20px;">{{ sub_item.name }}</el-link>
+            <span class="line" :key="sub_index">
+                <el-link :key="index+'_'+sub_index" :href="sub_item.url" target="_blank"
+                         style="color: powderblue;font-size: 20px;">{{ sub_item.name }}</el-link>
             </span>
           </template>
         </div>
@@ -63,7 +63,7 @@ export default {
           {"name": "3Blue1Brown", "url": "https://www.3blue1brown.com/"}
         ],
         "translate": [
-          {"name": "deepl", "url": "https://www.deepl.com/translator"},
+          {"name": "DeepL", "url": "https://www.deepl.com/translator"},
           {"name": "Google翻译", "url": "https://translate.google.com/"},
           {"name": "有道翻译", "url": "https://fanyi.youdao.com/"}
         ],
