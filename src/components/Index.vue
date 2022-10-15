@@ -69,6 +69,7 @@ export default {
         ],
         "tool": [
           {"name": "Gmail", "url": "https://mail.google.com/mail/"},
+          {"name": "Google Drive", "url": "https://drive.google.com/drive/my-drive/"},
           {"name": "高德地图", "url": "https://ditu.amap.com/"},
           {"name": "A, Chizi!", "url": "http://achizi.com/"},
           {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
@@ -123,6 +124,7 @@ export default {
         ],
         "study": [
           {"name": "ProcessOn", "url": "https://www.processon.com/"},
+          {"name": "JDON", "url": "https://www.jdon.com/"},
           {"name": "mooc", "url": "https://www.imooc.com/"},
           {"name": "geektime", "url": "https://time.geekbang.org/"},
           {"name": "LeetCode", "url": "https://leetcode-cn.com/"},
@@ -133,7 +135,8 @@ export default {
           {"name": "美团技术团队", "url": "https://tech.meituan.com/"},
           {"name": "infoQ", "url": "https://xie.infoq.cn/"},
           {"name": "掘金", "url": "https://juejin.cn/"},
-          {"name": "Algorithms", "url": "https://algs4.cs.princeton.edu/10fundamentals/"}
+          {"name": "Algorithms", "url": "https://algs4.cs.princeton.edu/10fundamentals/"},
+          {"name": "中国色", "url": "http://zhongguose.com/"}
         ],
         "docs": [
           {"name": "Java", "url": "https://docs.oracle.com/en/java/"},
@@ -147,7 +150,8 @@ export default {
           {"name": "Greenplum", "url": "https://greenplum.org/"},
           {"name": "SqlServer", "url": "https://docs.microsoft.com/zh-cn/sql/sql-server/?view=sql-server-ver15/"},
           {"name": "nacos", "url": "https://nacos.io/zh-cn/index.html"},
-          {"name": "presto", "url": "https://prestodb.io/"}
+          {"name": "presto", "url": "https://prestodb.io/"},
+          {"name": "ECharts", "url": "https://echarts.apache.org/examples/zh/"}
         ],
         "work": [
           {"name": "微信", "url": "https://wx.qq.com/"},
