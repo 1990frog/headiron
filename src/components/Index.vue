@@ -69,7 +69,7 @@ export default {
         ],
         "tool": [
           {"name": "Gmail", "url": "https://mail.google.com/mail/"},
-          {"name": "Google Drive", "url": "https://drive.google.com/drive/my-drive/"},
+          {"name": "Google Drive", "url": "https://drive.google.com/"},
           {"name": "高德地图", "url": "https://ditu.amap.com/"},
           {"name": "A, Chizi!", "url": "http://achizi.com/"},
           {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
