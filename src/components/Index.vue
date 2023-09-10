@@ -43,20 +43,18 @@ export default {
         url: "https://www.baidu.com/baidu?tn=baidu&word=${keyword}"
       },
       bookmarks: {
-        "hot": [
-          {"name": "今日热点", "url": "https://tophub.today/"}
-        ],
         "search": [
           {"name": "Google", "url": "https://www.google.com/"},
           {"name": "Wiki", "url": "https://zh.wikipedia.org/"}
         ],
         "code": [
-          {"name": "github", "url": "https://github.com/"},
+          {"name": "Github", "url": "https://github.com/"},
           {"name": "ArchWiki", "url": "https://wiki.archlinux.org/"},
-          {"name": "DockerHub", "url": "https://hub.docker.com/"},
           {"name": "StackOverflow", "url": "https://stackoverflow.com/"},
-          {"name": "suckless", "url": "https://dwm.suckless.org/"},
-          {"name": "maven", "url": "https://mvnrepository.com/"}
+          {"name": "DockerHub", "url": "https://hub.docker.com/"},
+          {"name": "Maven", "url": "https://mvnrepository.com/"},
+          {"name": "Hyprland", "url": "https://hyprland.org/"},
+          {"name": "Suckless", "url": "https://dwm.suckless.org/"}
         ],
         "math": [
           {"name": "数学", "url": "https://zh.wikipedia.org/zh-cn/Portal:%E6%95%B0%E5%AD%A6"},
@@ -73,15 +71,15 @@ export default {
           {"name": "高德地图", "url": "https://ditu.amap.com/"},
           {"name": "A, Chizi!", "url": "http://achizi.com/"},
           {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
-          {"name": "wallhaven", "url": "https://wallhaven.cc/"},
-          {"name": "JustMySocks", "url": "https://justmysocks1.net"},
+          {"name": "Wallhaven", "url": "https://wallhaven.cc/"},
+          {"name": "JustMySocks", "url": "https://justmysocks.net"},
           {"name": "regex测试", "url": "https://tool.oschina.net/regex/"},
           {"name": "Json解析", "url": "https://www.json.cn/"}
         ],
         "book": [
           {"name": "起点", "url": "https://www.qidian.com/"},
-          {"name": "Z-Library", "url": "https://z-lib.org/"},
-          {"name": "知轩藏书", "url": "http://www.zxcs.me/"}
+          {"name": "Z-Library", "url": "https://z-lib.is/"},
+          {"name": "备胎书屋", "url": "https://beitai.cc/"}
         ],
         "news": [
           {"name": "BBC", "url": "https://www.bbc.com/news/world"},
@@ -94,18 +92,19 @@ export default {
           {"name": "逼乎", "url": "https://www.zhihu.com/"},
           {"name": "虎扑", "url": "https://www.hupu.com/"},
           {"name": "Reddit", "url": "https://www.reddit.com/"},
+          {"name": "Discord", "url": "https://discord.com/"},
           {"name": "蓝鸟", "url": "https://twitter.com/"},
           {"name": "IG", "url": "https://www.instagram.com/"},
           {"name": "Flickr", "url": "https://www.flickr.com/"},
-          {"name": "Chiphell", "url": "https://www.chiphell.com/"},
+          {"name": "ChipHell", "url": "https://www.chiphell.com/"},
           {"name": "NGA玩家社区", "url": "https://bbs.nga.cn/"},
           {"name": "V2EX", "url": "https://www.v2ex.com/"},
           {"name": "家电论坛", "url": "https://www.jdbbs.com/forum.php"},
-          {"name": "openwrt", "url": "http://www.openwrt.org.cn/bbs/forum.php"}
+          {"name": "Openwrt", "url": "http://www.openwrt.org.cn/bbs/forum.php"}
         ],
         "movie": [
           {"name": "YouTube", "url": "https://www.youtube.com/"},
-          {"name": "bilibili", "url": "https://www.bilibili.com/"},
+          {"name": "BiliBili", "url": "https://www.bilibili.com/"},
           {"name": "Netflix", "url": "https://www.netflix.com/"},
           {"name": "RARBG", "url": "https://rargb.to/"},
           {"name": "4K字幕网", "url": "https://www.a4k.net/"}
@@ -124,6 +123,7 @@ export default {
         ],
         "study": [
           {"name": "ProcessOn", "url": "https://www.processon.com/"},
+          {"name": "LinuxStory", "url": "https://linuxstory.org/"},
           {"name": "JDON", "url": "https://www.jdon.com/"},
           {"name": "mooc", "url": "https://www.imooc.com/"},
           {"name": "geektime", "url": "https://time.geekbang.org/"},
@@ -155,7 +155,6 @@ export default {
         ],
         "work": [
           {"name": "微信", "url": "https://wx.qq.com/"},
-          {"name": "DingTalk", "url": "https://im.dingtalk.com/"},
           {"name": "禅道", "url": "http://chandao.clinbrain.com//"},
           {"name": "OA", "url": "http://58.34.222.26:8088/seeyon/main.do?method=index"}
         ]
