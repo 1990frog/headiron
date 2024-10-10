@@ -43,13 +43,25 @@ export default {
         url: "https://www.baidu.com/baidu?tn=baidu&word=${keyword}"
       },
       bookmarks: {
-        "search": [
+        "normal": [
           {"name": "Google", "url": "https://www.google.com/"},
-          {"name": "Wiki", "url": "https://zh.wikipedia.org/"}
-        ],
-        "code": [
-          {"name": "Github", "url": "https://github.com/"},
+          {"name": "Google学术", "url": "https://scholar.google.com/"},
+          {"name": "Wiki", "url": "https://zh.wikipedia.org/"},
+          {"name": "Gmail", "url": "https://mail.google.com/mail/"},
           {"name": "ArchWiki", "url": "https://wiki.archlinux.org/"},
+          {"name": "全历史", "url": "https://www.allhistory.com/"},
+          {"name": "肌肉训练指南", "url": "https://musclewiki.cn/"},
+          {"name": "终身教育平台", "url": "https://le.ouchn.cn/home"},
+          {"name": "TBOX导航", "url": "https://www.tboxn.com/"},
+          {"name": "Linux命令查询", "url": "https://wangchujiang.com/linux-command/"},
+          {"name": "java全栈知识体系", "url": "https://pdai.tech/"},
+          {"name": "正则大全", "url": "https://any86.github.io/any-rule/"},
+          {"name": "开发者搜索", "url": "https://kaifa.baidu.com"},
+          {"name": "Crx搜搜", "url": "https://www.crxsoso.com"},
+          {"name": "小鸡IP工具箱  ", "url": "https://ipcheck.ing"},
+        ],
+        "developer": [
+          {"name": "Github", "url": "https://github.com/"},
           {"name": "StackOverflow", "url": "https://stackoverflow.com/"},
           {"name": "DockerHub", "url": "https://hub.docker.com/"},
           {"name": "Maven", "url": "https://mvnrepository.com/"},
@@ -57,7 +69,7 @@ export default {
           {"name": "Suckless", "url": "https://dwm.suckless.org/"}
         ],
         "math": [
-          {"name": "数学", "url": "https://zh.wikipedia.org/zh-cn/Portal:%E6%95%B0%E5%AD%A6"},
+          {"name": "MathWiki", "url": "https://zh.wikipedia.org/zh-cn/Portal:%E6%95%B0%E5%AD%A6"},
           {"name": "3Blue1Brown", "url": "https://www.3blue1brown.com/"}
         ],
         "translate": [
@@ -66,20 +78,19 @@ export default {
           {"name": "有道翻译", "url": "https://fanyi.youdao.com/"}
         ],
         "tool": [
-          {"name": "Gmail", "url": "https://mail.google.com/mail/"},
           {"name": "Google Drive", "url": "https://drive.google.com/"},
           {"name": "高德地图", "url": "https://ditu.amap.com/"},
-          {"name": "A, Chizi!", "url": "http://achizi.com/"},
           {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
           {"name": "Wallhaven", "url": "https://wallhaven.cc/"},
           {"name": "JustMySocks", "url": "https://justmysocks.net"},
           {"name": "regex测试", "url": "https://tool.oschina.net/regex/"},
           {"name": "Json解析", "url": "https://www.json.cn/"}
         ],
-        "book": [
+        "read": [
           {"name": "起点", "url": "https://www.qidian.com/"},
-          {"name": "Z-Library", "url": "https://z-lib.is/"},
-          {"name": "备胎书屋", "url": "https://beitai.cc/"}
+          {"name": "Z-Library", "url": "https://zh.z-lib.fm/"},
+          {"name": "鸠摩搜书", "url": "https://www.jiumodiary.com/#"},
+          {"name": "编程中文书籍", "url": "https://github.com/justjavac/free-programming-books-zh_CN#%E5%85%8D%E8%B4%B9%E7%9A%84%E7%BC%96%E7%A8%8B%E4%B8%AD%E6%96%87%E4%B9%A6%E7%B1%8D%E7%B4%A2%E5%BC%95"},
         ],
         "news": [
           {"name": "BBC", "url": "https://www.bbc.com/news/world"},
@@ -100,14 +111,12 @@ export default {
           {"name": "NGA玩家社区", "url": "https://bbs.nga.cn/"},
           {"name": "V2EX", "url": "https://www.v2ex.com/"},
           {"name": "家电论坛", "url": "https://www.jdbbs.com/forum.php"},
-          {"name": "Openwrt", "url": "http://www.openwrt.org.cn/bbs/forum.php"}
         ],
         "movie": [
           {"name": "YouTube", "url": "https://www.youtube.com/"},
           {"name": "BiliBili", "url": "https://www.bilibili.com/"},
           {"name": "Netflix", "url": "https://www.netflix.com/"},
           {"name": "RARBG", "url": "https://rargb.to/"},
-          {"name": "4K字幕网", "url": "https://www.a4k.net/"}
         ],
         "music": [
           {"name": "Spotify", "url": "https://open.spotify.com/"},
@@ -118,19 +127,16 @@ export default {
         "shopping": [
           {"name": "淘宝", "url": "https://www.taobao.com/"},
           {"name": "狗东", "url": "https://www.jd.com/"},
-          {"name": "Amazon", "url": "https://www.amazon.cn/"},
           {"name": "Zfrontier", "url": "http://www.zfrontier.com/"}
         ],
         "study": [
           {"name": "ProcessOn", "url": "https://www.processon.com/"},
-          {"name": "LinuxStory", "url": "https://linuxstory.org/"},
           {"name": "JDON", "url": "https://www.jdon.com/"},
           {"name": "mooc", "url": "https://www.imooc.com/"},
           {"name": "geektime", "url": "https://time.geekbang.org/"},
           {"name": "LeetCode", "url": "https://leetcode-cn.com/"},
           {"name": "炼数成金", "url": "http://www.dataguru.cn/"},
           {"name": "并发编程网", "url": "http://ifeve.com/"},
-          {"name": "VisuAlgo", "url": "https://visualgo.net/en"},
           {"name": "SegmentFault", "url": "https://segmentfault.com/"},
           {"name": "美团技术团队", "url": "https://tech.meituan.com/"},
           {"name": "infoQ", "url": "https://xie.infoq.cn/"},
@@ -144,7 +150,7 @@ export default {
           {"name": "Yarn", "url": "https://yarn.bootcss.com/"},
           {"name": "Hutool", "url": "https://www.hutool.cn/docs/#/"},
           {"name": "xxl-job", "url": "https://www.xuxueli.com/xxl-job/#/"},
-          {"name": "Mybatis-Plus", "url": "https://baomidou.com/"},
+          {"name": "MybatisPlus", "url": "https://baomidou.com/"},
           {"name": "SpringCloud", "url": "https://www.springcloud.cc/spring-cloud-greenwich.html"},
           {"name": "Groovy", "url": "http://www.groovy-lang.org/documentation.html"},
           {"name": "Greenplum", "url": "https://greenplum.org/"},
@@ -155,7 +161,6 @@ export default {
         ],
         "work": [
           {"name": "微信", "url": "https://wx.qq.com/"},
-          {"name": "禅道", "url": "http://chandao.clinbrain.com//"},
           {"name": "OA", "url": "http://58.34.222.26:8088/seeyon/main.do?method=index"}
         ]
       }
