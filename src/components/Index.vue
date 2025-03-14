@@ -43,34 +43,40 @@ export default {
         url: "https://www.baidu.com/baidu?tn=baidu&word=${keyword}"
       },
       bookmarks: {
+        "ai": [
+          {"name": "Deepseek", "url": "https://www.deepseek.com/"},
+          {"name": "百度AI", "url": "https://chat.baidu.com/search"},
+          {"name": "Metaso", "url": "https://metaso.cn/"},
+          {"name": "纳米", "url": "https://deepseek.n.cn"}
+        ],
         "normal": [
-          {"name": "Google", "url": "https://www.google.com/"},
+          {"name": "ProcessOn", "url": "https://www.processon.com/"},
+          {"name": "TBOX导航", "url": "https://www.tboxn.com/"},
           {"name": "Google学术", "url": "https://scholar.google.com/"},
           {"name": "Wiki", "url": "https://zh.wikipedia.org/"},
-          {"name": "Gmail", "url": "https://mail.google.com/mail/"},
           {"name": "ArchWiki", "url": "https://wiki.archlinux.org/"},
-          {"name": "全历史", "url": "https://www.allhistory.com/"},
-          {"name": "肌肉训练指南", "url": "https://musclewiki.cn/"},
-          {"name": "终身教育平台", "url": "https://le.ouchn.cn/home"},
-          {"name": "TBOX导航", "url": "https://www.tboxn.com/"},
-          {"name": "Linux命令查询", "url": "https://wangchujiang.com/linux-command/"},
-          {"name": "java全栈知识体系", "url": "https://pdai.tech/"},
-          {"name": "正则大全", "url": "https://any86.github.io/any-rule/"},
+        ],
+        "search": [
+          {"name": "Google", "url": "https://www.google.com/"},
+          {"name": "Bing", "url": "https://cn.bing.com/"},
           {"name": "开发者搜索", "url": "https://kaifa.baidu.com"},
-          {"name": "Crx搜搜", "url": "https://www.crxsoso.com"},
-          {"name": "小鸡IP工具箱  ", "url": "https://ipcheck.ing"},
+          {"name": "Crx搜搜", "url": "https://www.crxsoso.com"}
         ],
         "developer": [
           {"name": "Github", "url": "https://github.com/"},
           {"name": "StackOverflow", "url": "https://stackoverflow.com/"},
+          {"name": "SegmentFault", "url": "https://segmentfault.com/"},
           {"name": "DockerHub", "url": "https://hub.docker.com/"},
           {"name": "Maven", "url": "https://mvnrepository.com/"},
-          {"name": "Hyprland", "url": "https://hyprland.org/"},
-          {"name": "Suckless", "url": "https://dwm.suckless.org/"}
+          {"name": "Linux命令查询", "url": "https://wangchujiang.com/linux-command/"},
         ],
-        "math": [
+        "funny": [
+          {"name": "全历史", "url": "https://www.allhistory.com/"},
+          {"name": "肌肉训练指南", "url": "https://musclewiki.cn/"},
           {"name": "MathWiki", "url": "https://zh.wikipedia.org/zh-cn/Portal:%E6%95%B0%E5%AD%A6"},
-          {"name": "3Blue1Brown", "url": "https://www.3blue1brown.com/"}
+          {"name": "3Blue1Brown", "url": "https://www.3blue1brown.com/"},
+          {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
+
         ],
         "translate": [
           {"name": "DeepL", "url": "https://www.deepl.com/translator"},
@@ -80,11 +86,9 @@ export default {
         "tool": [
           {"name": "Google Drive", "url": "https://drive.google.com/"},
           {"name": "高德地图", "url": "https://ditu.amap.com/"},
-          {"name": "网页里的电脑博物馆", "url": "http://www.dnbwg.com/"},
           {"name": "Wallhaven", "url": "https://wallhaven.cc/"},
           {"name": "JustMySocks", "url": "https://justmysocks.net"},
-          {"name": "regex测试", "url": "https://tool.oschina.net/regex/"},
-          {"name": "Json解析", "url": "https://www.json.cn/"}
+          {"name": "小鸡IP工具箱  ", "url": "https://ipcheck.ing"}
         ],
         "read": [
           {"name": "起点", "url": "https://www.qidian.com/"},
@@ -100,12 +104,10 @@ export default {
           {"name": "观察者", "url": "https://www.guancha.cn/"},
         ],
         "forum": [
-          {"name": "逼乎", "url": "https://www.zhihu.com/"},
           {"name": "虎扑", "url": "https://www.hupu.com/"},
           {"name": "Reddit", "url": "https://www.reddit.com/"},
           {"name": "Discord", "url": "https://discord.com/"},
-          {"name": "蓝鸟", "url": "https://twitter.com/"},
-          {"name": "IG", "url": "https://www.instagram.com/"},
+          {"name": "X", "url": "https://twitter.com/"},
           {"name": "Flickr", "url": "https://www.flickr.com/"},
           {"name": "ChipHell", "url": "https://www.chiphell.com/"},
           {"name": "NGA玩家社区", "url": "https://bbs.nga.cn/"},
@@ -130,21 +132,13 @@ export default {
           {"name": "Zfrontier", "url": "http://www.zfrontier.com/"}
         ],
         "study": [
-          {"name": "ProcessOn", "url": "https://www.processon.com/"},
           {"name": "JDON", "url": "https://www.jdon.com/"},
           {"name": "mooc", "url": "https://www.imooc.com/"},
           {"name": "geektime", "url": "https://time.geekbang.org/"},
           {"name": "LeetCode", "url": "https://leetcode-cn.com/"},
-          {"name": "炼数成金", "url": "http://www.dataguru.cn/"},
-          {"name": "并发编程网", "url": "http://ifeve.com/"},
-          {"name": "SegmentFault", "url": "https://segmentfault.com/"},
           {"name": "美团技术团队", "url": "https://tech.meituan.com/"},
           {"name": "infoQ", "url": "https://xie.infoq.cn/"},
-          {"name": "掘金", "url": "https://juejin.cn/"},
           {"name": "Algorithms", "url": "https://algs4.cs.princeton.edu/10fundamentals/"},
-          {"name": "中国色", "url": "http://zhongguose.com/"}
-        ],
-        "docs": [
           {"name": "Java", "url": "https://docs.oracle.com/en/java/"},
           {"name": "Presto", "url": "https://prestodb.io/docs/current/"},
           {"name": "Yarn", "url": "https://yarn.bootcss.com/"},
@@ -157,11 +151,15 @@ export default {
           {"name": "SqlServer", "url": "https://docs.microsoft.com/zh-cn/sql/sql-server/?view=sql-server-ver15/"},
           {"name": "nacos", "url": "https://nacos.io/zh-cn/index.html"},
           {"name": "presto", "url": "https://prestodb.io/"},
-          {"name": "ECharts", "url": "https://echarts.apache.org/examples/zh/"}
+          {"name": "java全栈知识体系", "url": "https://pdai.tech/"},
+          {"name": "正则大全", "url": "https://any86.github.io/any-rule/"},
+          {"name": "regex测试", "url": "https://tool.oschina.net/regex/"},
+          {"name": "Json解析", "url": "https://www.json.cn/"},
+          {"name": "GO", "url": "https://go.dev/"},
         ],
-        "work": [
-          {"name": "微信", "url": "https://wx.qq.com/"},
-          {"name": "OA", "url": "http://58.34.222.26:8088/seeyon/main.do?method=index"}
+        "chats": [
+          {"name": "Gmail", "url": "https://mail.google.com/mail/"},
+          {"name": "微信", "url": "https://wx.qq.com/"}
         ]
       }
     }
